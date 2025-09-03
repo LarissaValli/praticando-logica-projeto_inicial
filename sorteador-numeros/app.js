@@ -3,6 +3,11 @@ function sortear() {
     let de = parseInt(document.getElementById('de').value);
     let ate = parseInt(document.getElementById('ate').value);
 
+    if (de >= ate) {
+    alert('Campo "Do número" deve ser inferior ao campo "Até o número". Verifique!');
+    return;
+  }
+
     let sorteados = [];
     let numero;
 
@@ -19,6 +24,7 @@ function sortear() {
     let resultado = document.getElementById('resultado');
     resultado.innerHTML =  `<label class="texto__paragrafo">Números sorteados: ${sorteados}</label>`
     alterarStatusBotao();
+
 }
 
 function obterNumeroAleatorio(min, max) {
