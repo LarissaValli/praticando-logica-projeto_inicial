@@ -25,8 +25,6 @@ function limpar() {
     document.getElementById('valor-total').textContent = 'R$0';
 }
 
-// Vamos praticar?
-
 // Adicione validações no código para garantir que o usuário só consiga adicionar produtos ao carrinho se tiver selecionado um produto válido e inserido uma quantidade válida. Se a entrada não for válida, exiba uma mensagem de erro apropriada.
 
 // Crie um formulário simples com campos de entrada e utilize JavaScript para recuperar os valores digitados nos campos usando a propriedade value. Exiba os valores no console e na tela.
